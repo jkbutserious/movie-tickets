@@ -29,5 +29,8 @@ $(document).ready(function() {
 
     newTicket.price = newTicket.ticketPrice(userShowTime, userAge);
     console.log(newTicket);
+
+    $("#ticket-price").show();
+    $("#final-price").text("$" + newTicket.price);
   });
 })
